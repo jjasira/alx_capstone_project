@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <form class="contact-form">
+        <label for="firstName">First Name:</label>
+        <input class="input-field" type="text" name="firstName" required />
+        <label for="lastName">Last Name:</label>
+        <input class="input-field" type="text" name="lastName" required />
+        <label for="email">Email</label>
+        <input
+          class="input-field"
+          type="text"
+          name="email"
+          required
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        />
+        <div class="button-container">
+          <input class="submit-button" type="submit" />
+        </div>
+      </form>
+    </div>
+    <script src="contact.js"></script>
+  </body>
+</html>

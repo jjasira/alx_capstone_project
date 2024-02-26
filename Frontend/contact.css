@@ -1,0 +1,20 @@
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.form-container{
+    text-align: center;
+    width: 50%;
+}
+
+.input-field{
+    padding-top: 5px;
+    margin: 5px;
+}
+
+.submit-button{
+    width: 100px;
+    text-align: center;
+}
