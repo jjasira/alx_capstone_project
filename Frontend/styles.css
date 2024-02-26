@@ -110,4 +110,34 @@ a.active,a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+    .banner-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .name-and-brief-description{
+        width: 100%;
+    }
+    
+    .image-container{
+        width: 100%;
+    }
 }
+
+
+/* Banner styles */
+@media  (min-width: 858px){
+    .banner-container{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .name-and-brief-description{
+        width: 50%;
+    }
+    
+    .image-container{
+        width: 50%;
+    }
+}
+ 
