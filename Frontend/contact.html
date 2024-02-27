@@ -8,16 +8,29 @@
   </head>
   <body>
     <div class="form-container">
-      <form class="contact-form">
+      <form class="contact-form" id="contact-form">
         <label for="firstName">First Name:</label>
-        <input class="input-field" type="text" name="firstName" required />
+        <input
+          class="input-field"
+          type="text"
+          name="firstName"
+          id="firstName"
+          required
+        />
         <label for="lastName">Last Name:</label>
-        <input class="input-field" type="text" name="lastName" required />
+        <input
+          class="input-field"
+          type="text"
+          name="lastName"
+          id="lastName"
+          required
+        />
         <label for="email">Email</label>
         <input
           class="input-field"
           type="text"
           name="email"
+          id="email"
           required
           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
         />
