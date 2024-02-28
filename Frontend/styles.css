@@ -122,6 +122,15 @@ a.active,a:hover{
     .image-container{
         width: 100%;
     }
+
+    .header-button-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
 }
 
 
@@ -130,14 +139,49 @@ a.active,a:hover{
     .banner-container{
         display: flex;
         flex-direction: row;
+        height: 600px;
     }
     
     .name-and-brief-description{
         width: 50%;
+        text-align: center;
+        padding-top: 15% ;
     }
     
     .image-container{
         width: 50%;
+        text-align: center;
+        padding-top: 10% ;
     }
+
+    .header-button-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20px;
+    }
+    
+    .header-button-container button{
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .about-container{
+        height: 600px;
+        
+    }
+
+    .resume-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 50px ;
+    }
+
+    .about-heading{
+        text-align: center;
+    }
+
 }
  
