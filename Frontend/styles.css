@@ -201,6 +201,14 @@ a.active,a:hover{
         width: 300px;
     }
 
+    .portfolio-container{
+        display: grid;
+    }
+
+    .skill-container{
+        display: grid;
+    }
+
 }
  
 
