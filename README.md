@@ -6,7 +6,6 @@ The project has an appealing user interface that will quickly bring into realiza
 # Technologies
 This is a fullstack web application. The Frontend has been built using HTML, CSS and vanilla JavaScript. The Backend has been nuilt using python and the Flask framework utilizing a MYSQL database. The ORM used is SQLALchemy.
 # Screenshots or Demo
-
 # Roadmap and future enhancements
 The future plans for the project include, using a frontend webframework such as REACT, including a livechat feature where potential clients can initiate conversations and inquiries directly from the app and may more
 # Contact Information

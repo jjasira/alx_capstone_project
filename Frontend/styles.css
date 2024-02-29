@@ -151,7 +151,12 @@ a.active,a:hover{
     .image-container{
         width: 50%;
         text-align: center;
-        padding-top: 10% ;
+        padding-top: 10px;
+    }
+
+    .image-container img{
+        height: 500px;
+        width: 500px;
     }
 
     .header-button-container{
@@ -168,7 +173,10 @@ a.active,a:hover{
     }
 
     .about-container{
-        height: 600px;
+        height: 500px;
+        background-image: url("images/download.jpg");
+        color: white;
+        
         
     }
 
@@ -183,5 +191,16 @@ a.active,a:hover{
         text-align: center;
     }
 
+    .logo-skill-container img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .project-container img{
+        height: 300px;
+        width: 300px;
+    }
+
 }
  
+
