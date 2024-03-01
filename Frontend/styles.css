@@ -2,11 +2,11 @@
 :root{
     --background-color: #0082e6;
 }
-
 section{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 /* Navbar styles */
 
 *{
@@ -91,6 +91,8 @@ a.active,a:hover{
 }
 
 .resume-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -183,8 +185,11 @@ a.active,a:hover{
 
 /* Banner styles */
 @media  (min-width: 858px){
-    .banner-container{
+    .banner{
         background-color: #0000FF;
+    }
+    .banner-container{
+        
         display: flex;
         flex-direction: row;
         height: 600px;
@@ -220,9 +225,12 @@ a.active,a:hover{
         margin: 20px;
     }
 
+    .About{
+        background-image: url("images/download.jpg");
+    }
     .about-container{
         height: 500px;
-        background-image: url("images/download.jpg");
+        
         color: white;
         
         
