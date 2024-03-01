@@ -1,3 +1,9 @@
+/* CSS Variables */
+:root{
+    --background-color: #0082e6;
+}
+
+
 /* Navbar styles */
 
 *{
@@ -13,7 +19,7 @@
 }
 
 nav{
-    background: #0082e6;
+    background: var(--background-color);
     height: 80px;
     width: 100%;
 }
@@ -111,11 +117,13 @@ a.active,a:hover{
         left: 0;
     }
     .banner-container{
+        background-color: var(--background-color);
         display: flex;
         flex-direction: column;
     }
     
     .name-and-brief-description{
+        
         width: 100%;
     }
     
@@ -137,6 +145,7 @@ a.active,a:hover{
 /* Banner styles */
 @media  (min-width: 858px){
     .banner-container{
+        background-color: #0000FF;
         display: flex;
         flex-direction: row;
         height: 600px;
@@ -196,6 +205,7 @@ a.active,a:hover{
         width: 50px;
     }
     .portfolio{
+        background-color: var(--background-color);
         text-align: center;
     }
 
@@ -232,6 +242,7 @@ a.active,a:hover{
     } 
 
     .skills{
+        background-color: #808080;
         text-align: center;
     }
 
