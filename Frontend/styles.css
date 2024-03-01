@@ -195,18 +195,49 @@ a.active,a:hover{
         height: 50px;
         width: 50px;
     }
+    .portfolio{
+        text-align: center;
+    }
 
-    .project-container img{
+    .portfolio-container img{
         height: 300px;
         width: 300px;
     }
 
     .portfolio-container{
         display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 30px;
+    }
+
+    .project-container-2 img{
+        height: 600px;
+        width: 500px;
+    }
+    .project-container-2{
+        text-align: center;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .project-container-1{
+        text-align: center;
+    } 
+    .project-container-3{
+        text-align: center;
+    } 
+    .project-container-4{
+        text-align: center;
+    } 
+
+    .skills{
+        text-align: center;
     }
 
     .skill-container{
         display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
 }
