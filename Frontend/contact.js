@@ -16,13 +16,16 @@ const handleFormSubmit = () => {
   const lastName = lastNameInput.value.trim();
   const email = emailInput.value.trim();
 
-  const requestBody = {
-    first_name: firstName,
-    last_name: lastName,
-    email: email,
-  };
-
-  register(requestBody);
+  if (validateEmail(email)) {
+    const requestBody = {
+      first_name: firstName,
+      last_name: lastName,
+      email: email,
+    };
+    register(requestBody);
+  } else {
+    alert("please enter a valid email");
+  }
 };
 
 const register = async (requestBody) => {
@@ -44,3 +47,9 @@ const register = async (requestBody) => {
     alert("Your Contact has been saved successfully");
   }
 };
+
+function validateEmail(email) {
+  let validateRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  return validateRegex.test(email);
+}
