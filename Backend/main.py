@@ -1,6 +1,11 @@
 from flask import request, jsonify
 from config import app, db
 from models import Contact
+from email.message import EmailMessage
+import ssl
+import smtplib
+from dotenv import load_dotenv, dotenv_values
+import os
 
 @app.route("/contacts", methods=["GET"])
 def get_contacts():
@@ -15,6 +20,25 @@ def create_contact():
     first_name = request.json.get('first_name')
     last_name = request.json.get('last_name')
     email = request.json.get('email')
+
+    email_sender = os.getenv('EMAIL_SENDER2')
+    email_password = os.getenv('PASSWORD')
+
+    email_receiver = "jjasira2018@gmail.com"
+    subject = "New Subscription"
+    body = f"{first_name} {last_name} subscribed to your newsletter with {email}"
+
+    em = EmailMessage()
+    em['From'] = email_sender
+    em['To'] = email_receiver
+    em['Subject'] = subject
+    em.set_content(body)
+
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
+        smtp.login(email_sender, email_password)
+        smtp.sendmail(email_sender, email_receiver, em.as_string())
+
 
     """Validate that every field required is entered"""
     if not first_name or not last_name or not email:
