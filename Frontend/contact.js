@@ -24,7 +24,10 @@ const handleFormSubmit = () => {
     };
     register(requestBody);
   } else {
-    alert("please enter a valid email");
+    const alertParagraph = document.createElement("p");
+    alertParagraph.innerHTML = "Please enter a valid email address";
+    alertParagraph.style.color = "red";
+    document.getElementById("contact-form").appendChild(alertParagraph);
   }
 };
 
