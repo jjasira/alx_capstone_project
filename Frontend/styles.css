@@ -128,6 +128,7 @@ a.active,a:hover{
 }
 
 @media  (max-width: 858px) {
+    /* navbar styles */
     .checkbtn{
         display: block;
     }
@@ -157,37 +158,69 @@ a.active,a:hover{
     #check:checked ~ ul{
         left: 0;
     }
+
+    /* banner styles */
     .banner-container{
-        background-color: var(--background-color);
         display: flex;
         flex-direction: column;
     }
     
     .name-and-brief-description{
-        
+        text-align: center;
         width: 100%;
     }
     
     .image-container{
+        text-align: center;
         width: 100%;
     }
 
     .header-button-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         text-align: center;
         padding-top: 20px;
     }
     
+    .header-button-container button{
+        width: 100px;
+        padding: 7px;
+        margin: 5px;
+    }
+
+    /* About styles */
+    .about-container{
+        text-align: center;
+    }
+
+    /* Portfolio styles */
+    .portfolio{
+        text-align: center;
+    }
+
+    .portfolio-container img{
+        width: 400px;
+        height: 400px;
+    }
+
+    /* skills styles */
+    .skills{
+        text-align: center;
+    }
+
+    .skill-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skill-container img{
+        width: 50px;
+        height: 50px;
+    }
 }
 
 
 /* Banner styles */
 @media  (min-width: 858px){
-    .banner{
-        background-color: #0000FF;
-    }
+    
     .banner-container{
         
         display: flex;
@@ -225,9 +258,7 @@ a.active,a:hover{
         margin: 20px;
     }
 
-    .About{
-        background-image: url("images/download.jpg");
-    }
+    
     .about-container{
         height: 500px;
         
@@ -252,7 +283,7 @@ a.active,a:hover{
         width: 50px;
     }
     .portfolio{
-        background-color: var(--background-color);
+        
         text-align: center;
     }
 
@@ -289,7 +320,6 @@ a.active,a:hover{
     } 
 
     .skills{
-        background-color: #808080;
         text-align: center;
     }
 
@@ -300,6 +330,19 @@ a.active,a:hover{
 
 }
  
+
+
+/* About section styles */
+.About{
+    background-color: var(--background-color);
+}
+
+
+/* skills section styles */
+.skills{
+    background-color: var(--background-color); 
+}
+
 /* footer styles */
 .footer-container{
     display: flex;
@@ -313,3 +356,6 @@ a.active,a:hover{
     width: 20px;
 }
 
+.copyright-container{
+    text-align: center;
+}
