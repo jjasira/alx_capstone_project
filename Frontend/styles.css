@@ -7,6 +7,20 @@ section{
     padding-bottom: 20px;
 }
 
+img{
+    border-radius: 25px;
+}
+
+
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-bottom: 20px;
+    border: 5px;
+  }
+
+
 /* Navbar styles */
 
 *{
@@ -201,6 +215,10 @@ a.active,a:hover{
         height: 400px;
     }
 
+    .portfolio-container img:hover{
+        transform: scale(1.2, 1.2);
+    }
+
     /* skills styles */
     .skills{
         text-align: center;
@@ -292,6 +310,10 @@ a.active,a:hover{
         width: 300px;
     }
 
+    .portfolio-container img:hover{
+        transform: scale(1.5, 1.5);
+    }
+
     .portfolio-container{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -330,18 +352,49 @@ a.active,a:hover{
 
 }
  
-
+/* Banner styles */
+.image-container img{
+    border-radius: 250px;
+}
 
 /* About section styles */
 .About{
     background-color: var(--background-color);
+    border: 20px solid transparent;
+    padding: 15px;
+    border-image: url(images/Borders/Border\ 4.jpg) 30 round; 
 }
 
+
+/* portfolio styles */
+.portfolio-container img{
+    box-shadow: 10px 10px lightblue;
+    margin-bottom: 20px;
+}
+
+
+
+
+.portfolio-container a{
+    padding: 1px;
+    background-color: lightblue;
+    border-top: 10px;
+    border-radius: 10px;
+}
 
 /* skills section styles */
 .skills{
-    background-color: var(--background-color); 
+    background-color: var(--background-color);
+    border: 30px solid transparent;
+    padding: 15px;
+    border-image: url(images/Borders/Border\ 3.jpg) 30 round; 
 }
+
+.skills img:hover{
+    transform: scale(1.5, 1.5);
+}
+
+
 
 /* footer styles */
 .footer-container{
