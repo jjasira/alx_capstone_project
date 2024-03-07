@@ -5,51 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
     <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <div class="Newsletter">
-      <h1>SUBSCRIBE TO MY NEWSLETTER!</h1>
-      <ul>
-        <li>Get notified on new services when they arrive!</li>
-        <li>
-          Get access to my email, where you can inquire on services offered and
-          get immediate responses
-        </li>
-        <li>Get notified on discounts</li>
-        <li>Receive tailor made bronchures on all my services</li>
-      </ul>
-    </div>
-    <div class="form-container">
-      <form class="contact-form" id="contact-form">
-        <label for="firstName">First Name:</label>
-        <input
-          class="input-field"
-          type="text"
-          name="firstName"
-          id="firstName"
-          required
-        />
-        <label for="lastName">Last Name:</label>
-        <input
-          class="input-field"
-          type="text"
-          name="lastName"
-          id="lastName"
-          required
-        />
-        <label for="email">Email</label>
-        <input
-          class="input-field"
-          type="text"
-          name="email"
-          id="email"
-          required
-        />
-        <div class="button-container">
-          <input class="submit-button" type="submit" value="SUBSCRIBE" />
+    <header>
+      <section>
+        <div class="navbar-container">
+          <nav>
+            <input type="checkbox" id="check" />
+            <label for="check" class="checkbtn">
+              <i class="fa fa-bars"></i>
+            </label>
+            <label for="" class="logo">Asira</label>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a class="active" href="contact.html">Contact Me</a></li>
+            </ul>
+          </nav>
         </div>
-      </form>
-    </div>
+      </section>
+    </header>
+    <main>
+      <div class="newsletter-container">
+        <div class="Newsletter">
+          <h1>SUBSCRIBE TO MY NEWSLETTER!</h1>
+          <ul>
+            <li>Get notified on new services when they arrive!</li>
+            <li>
+              Get access to my email, where you can inquire on services offered
+              and get immediate responses
+            </li>
+            <li>Get notified on discounts</li>
+            <li>Receive tailor made bronchures on all my services</li>
+          </ul>
+        </div>
+        <div class="form-container">
+          <form class="contact-form" id="contact-form">
+            <label for="firstName">First Name:</label>
+            <input
+              class="input-field"
+              type="text"
+              name="firstName"
+              id="firstName"
+              required
+            />
+            <label for="lastName">Last Name:</label>
+            <input
+              class="input-field"
+              type="text"
+              name="lastName"
+              id="lastName"
+              required
+            />
+            <label for="email">Email</label>
+            <input
+              class="input-field"
+              type="text"
+              name="email"
+              id="email"
+              required
+            />
+            <div class="button-container">
+              <input class="submit-button" type="submit" value="SUBSCRIBE" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section class="footer-section">
+        <div class="footer-container">
+          <div class="logo-container">
+            <img src="" alt="LOGO" />
+          </div>
+          <div class="social-media">
+            <a href="https://twitter.com/JamesAsira2"
+              ><img src="images/twitter.jpg" alt="twitter"
+            /></a>
+            <a href="https://github.com/jjasira"
+              ><img src="images/github logo.jpg" alt="github"
+            /></a>
+            <a href="https://www.facebook.com/profile.php?id=100006605926050"
+              ><img src="images/facebook.jpg" alt="facebook"
+            /></a>
+          </div>
+        </div>
+        <div class="copyright-container"><p>&#169; James Asira 2024</p></div>
+      </section>
+    </footer>
+
     <script src="contact.js"></script>
   </body>
 </html>
