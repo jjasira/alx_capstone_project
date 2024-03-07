@@ -23,6 +23,11 @@ const handleFormSubmit = () => {
       email: email,
     };
     register(requestBody);
+    let submitForm = document.getElementById("contact-form");
+    submitForm.style.display = "none";
+    let message = document.createElement("p");
+    message.innerHTML = `You have successfully subscribed to the Newsletter with ${email}`;
+    document.getElementById("form-container").appendChild(message);
   } else {
     const alertParagraph = document.createElement("p");
     alertParagraph.innerHTML = "Please enter a valid email address";
