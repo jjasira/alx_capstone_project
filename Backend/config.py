@@ -9,10 +9,12 @@ load_dotenv()
 
 app = Flask(__name__)
 CORS(app)
+"""This is the database name"""
 db_name = 'my_contacts'
+"""This is the database host which is local host currently"""
 db_host = '127.0.0.1'
+"""we get the username and password from our environmant varables"""
 db_username = os.getenv('DB_USERNAME')
-
 db_password = os.getenv('DB_PASSWORD')
 
 """connect to our database, we will be using a MySQL database"""

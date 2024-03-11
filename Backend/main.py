@@ -17,17 +17,23 @@ def get_contacts():
 
 @app.route("/create_contact", methods=["POST"])
 def create_contact():
+    """we get the firstname, lastname and email address from our frontend"""
     first_name = request.json.get('first_name')
     last_name = request.json.get('last_name')
     email = request.json.get('email')
-
+    
+    """We get the email sender's details from our environment variables"""
     email_sender = os.getenv('EMAIL_SENDER2')
     email_password = os.getenv('PASSWORD')
 
+    """This is the email that will receive the details of the new subscriber from our server"""
     email_receiver = "jjasira2018@gmail.com"
+    """The email sunject"""
     subject = "New Subscription"
+    """The email body"""
     body = f"{first_name} {last_name} subscribed to your newsletter with {email}"
 
+    """initialize our email object and set the parameters"""
     em = EmailMessage()
     em['From'] = email_sender
     em['To'] = email_receiver
@@ -36,6 +42,7 @@ def create_contact():
 
     context = ssl.create_default_context()
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
+        """Login to the email address and send email"""
         smtp.login(email_sender, email_password)
         smtp.sendmail(email_sender, email_receiver, em.as_string())
 

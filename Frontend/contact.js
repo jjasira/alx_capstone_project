@@ -32,7 +32,7 @@ const handleFormSubmit = () => {
     const alertParagraph = document.createElement("p");
     alertParagraph.innerHTML = "Please enter a valid email address";
     alertParagraph.style.color = "red";
-    document.getElementById("contact-form").appendChild(alertParagraph);
+    document.getElementById("error-message").appendChild(alertParagraph);
   }
 };
 
