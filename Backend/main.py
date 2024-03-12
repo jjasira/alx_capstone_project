@@ -1,11 +1,11 @@
-from flask import request, jsonify
 from config import app, db
-from models import Contact
-from email.message import EmailMessage
-import ssl
-import smtplib
 from dotenv import load_dotenv, dotenv_values
+from email.message import EmailMessage
+from flask import request, jsonify
+from models import Contact
 import os
+import smtplib
+import ssl
 
 @app.route("/contacts", methods=["GET"])
 def get_contacts():
