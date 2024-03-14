@@ -13,3 +13,10 @@ Name: Asira James John
 Email: jjasira2016@gmail.com
 Twitter/X: https://twitter.com/JamesAsira2
 Github:  https://github.com/jjasira
+
+# Inspiration
+https://www.minimal.gallery
+https://www.darkmodedesign.com/
+https://www.awwwards.com/
+https://refero.design/
+https://stacksorted.com/
